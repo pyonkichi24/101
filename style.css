@@ -1,0 +1,746 @@
+h1 {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body  {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+}  
+
+h1 {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.header-area {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.header-area > a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header-area > a:link {
+    color: black;
+}
+
+.header-area > a:visited {
+    color: black;
+}
+
+.header-area > a:hover {
+    color: black;
+}
+
+.header-area > a:active {
+    color: black;
+}
+
+.hamburger {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    position: fixed;
+    top: 120px;
+    right: 30px;
+    z-index: 1;
+}
+
+.hamburger span {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*ハンバーガーメニューの線*/
+.hamburger span:first-of-type {
+    top: 0;
+}
+
+.hamburger span:nth-of-type(2) {
+    top: 50%;
+}
+
+.hamburger span:last-of-type {
+    top: 100%;
+}
+
+#menu-sp {
+    background-color: rgb(163, 198, 221);
+    position: fixed;
+    font-size: 15px;
+    font-weight: bold;
+    top: 150px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: .5s;
+}
+
+#menu-sp li {
+    color: #fff;
+    line-height: 5;
+    text-align: left;
+    list-style: none;
+}
+
+#menu-sp > a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+#menu-sp > a:link {
+    color: white;
+}
+
+#menu-sp > a:visited {
+    color: white;
+}
+
+#menu-sp > a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#menu-sp > a:active {
+    color: white;
+}
+
+
+.hamburger.active span:first-of-type {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:last-of-type {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+#menu-sp.active {
+    transform: translateX(0);
+}
+
+/*メインビジュアル*/
+
+.main {
+    position: relative;
+    overflow: hidden;
+    max-width: 95%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.main p {
+    position: absolute;
+    top: 60%;
+    left: 13%;
+    font-size: 3vw;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: 10px;
+}
+
+/*about*/
+h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.4);
+    margin:20px 30px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.about_img {
+    max-width: 35%;
+    height: auto;
+    margin: 10px 50px 10px 20px;
+}
+
+.about_img img {
+    box-shadow: 30px 30px 5px rgba(177, 224, 255, 0.6); 
+}
+
+.about_text {
+    position: relative;
+    max-width: 40%;
+    height: auto;
+    margin: 0 20px;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: lighter;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+ p {
+    font-size: 10px;
+}
+
+.button {
+    font-size: 17px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    letter-spacing: 3px;
+    width: 70px;
+    padding: 3px 20px;
+    margin-left: auto;
+    margin-top: 120px;
+    white-space: nowrap;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.button a:link {
+    color: black;
+}
+
+.button a:visited {
+    color: black;
+}
+
+.button a:hover {
+    color: black;
+}
+
+.button a:active {
+    color: black;
+}
+
+
+/* WORKS */
+.works1 h3 {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.works1 > h3 {
+    width: 90%;
+}
+
+.works2 {
+    width: 90%;
+    margin: 30px auto 70px auto;
+}
+
+.works_img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.works2 h4 {
+    font-size: 13px;
+    font-weight: 130;
+    margin-top: 0px;
+}
+
+/* footer */
+footer {
+    background-color: rgba(169, 200, 218, 0.5);
+    padding-bottom: 10px;
+    padding-top: 15px;
+    margin-top: 50px;
+}
+
+.fin {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+nav {
+    display: none;
+}
+
+/* ABOUT.html */
+.about-name {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about-h3 {
+    font-size: 15px;
+    font-weight: lighter;
+    border-bottom: none;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.about-text {
+    width: 70%;
+    margin: 10px auto;
+}
+
+.about-title {
+    padding-top: 40px;
+}
+
+.career > div {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.skill {
+    width: 75%;
+    margin: 30px auto;
+    background-color: rgba(173, 178, 182, 0.2);
+    padding: 20px;
+}
+
+.skill > div {
+    font-size: 15px;
+}
+
+.skill2 {
+    border-bottom: solid 1.5px rgba(169, 200, 218, 0.5);
+}
+
+/* WORKS下層ページ */
+.piece {
+    max-width: 95%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.piece_text {
+    margin-left: 15px;
+}
+
+.corporate {
+    padding: 0 50px;
+}
+
+.corporate h1 {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px auto 30px auto;
+}
+
+.corporate h2 {
+    font-size: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px rgba(169, 200, 218, 0.5);
+    display: inline-block;
+}
+
+.corporate p {
+    margin: 15px;
+}
+
+.piece2 {
+    display: flex;
+    max-width: 95%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.piece3 {
+    max-width: 50%;
+    height: auto;
+    background-color: rgba(173, 178, 182, 0.2);
+    padding: 10px 30px;
+    margin-right: 20px;
+}
+
+.piece4 {
+    max-width: 20%;
+    background-color: rgba(173, 178, 182, 0.2);
+    height: auto;
+    padding: 10px 20px;
+}
+
+.piece5 {
+    max-width: 30%;
+    height: auto;
+    background-color: rgba(173, 178, 182, 0.2);
+    margin: 10px 0 10px 30px;
+}
+
+.corporate a {
+    text-decoration: none;
+}
+
+.corporate a:link {
+    color: black;
+}
+
+.corporate a:visited {
+    color: black;
+}
+
+.corporate a:hover {
+    color: black;
+}
+
+.corporate a:active {
+    color: black;
+}
+
+.corporate h1 {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*PCデザイン*/
+@media screen and (min-width: 768px) {
+
+h1 {
+    font-size: 35px;
+    padding-left: 40px;
+}
+
+.menu-sp,
+.hamburger {
+    display: none;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+}
+
+.menu-menu-1-container a {
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.menu-menu-1-container a:link {
+    color: black;
+}
+
+.menu-menu-1-container a:visited {
+    color: black;
+}
+
+.menu-menu-1-container a:hover {
+    color: black;
+}
+
+.menu-menu-1-container a:active {
+    color: black;
+}
+
+.menu-menu-1-container ul {
+    list-style: none;
+}
+
+.menu-menu-1-container {
+    right: 30px;
+}
+
+nav {
+    display: inline;
+    font-size: 20px;
+    margin-left: 820px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav > a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav > a:link {
+    color: black;
+}
+
+nav > a:visited {
+    color: black;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+nav > a:active {
+    color: black;
+}
+
+.mainvisual {
+    margin-bottom: 200px;
+}
+
+.main {
+    position: relative;
+    width: 1000px;
+    margin: 0px auto 10px auto;
+}
+
+.main p {
+    position: absolute;
+    top: 55%;
+    left: 9%;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 20px;
+}
+
+/* about */
+h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.4);
+    margin:40px 150px;
+}
+
+.about {
+    margin-bottom: 200px;
+}
+
+.about_img {
+    max-width: 30%;
+    height: auto;
+    margin: 10px 80px 10px 20px;
+}
+
+.about_text {
+    position: relative;
+    max-width: 35%;
+    height: auto;
+}
+
+.about_text > a {
+    text-decoration: none;
+}
+
+.about_text > a:link {
+    color: black;
+}
+
+.about_text > a:visited {
+    color: black;
+}
+
+.about_text > a:hover {
+    color: black;
+}
+
+.about_text > a:active {
+    color: black;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+}
+
+
+/* WORKS */
+.works1 h3 {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.works2 {
+    width: 73%;
+    margin: 100px auto 150px auto;
+}
+
+.works2 h4 {
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 0px;
+}
+
+/* footer */
+footer {
+    margin-top: 200px;
+}
+
+.fin {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* about.html */
+.about1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 140px;
+}
+
+.main {
+    width: 75%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.about-h3 {
+    font-size: 20px;
+}
+
+.about-text {
+    width: 50%;
+    margin: 30px auto;
+}
+
+.skill {
+    width: 30%;
+    padding: 30px;
+    margin: 20px;
+}
+
+.skill > div {
+    font-size: 20px;
+}
+
+.skill-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.career > div {
+    margin: 70px auto;
+}
+
+/* WORKS下層ページ */
+.piece {
+    max-width: 75%;
+    height: auto;
+    margin: 20px auto 50px auto;
+}
+
+
+.corporate {
+    padding: 0 50px;
+}
+
+.corporate h1 {
+    font-size: 22px;
+    text-align: center;
+    margin: 10px auto 50px auto;
+}
+
+.corporate h2 {
+    font-size: 20px;
+    margin-left: 170px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    border-bottom: solid 1px rgba(169, 200, 218, 0.5);
+    display: inline-block;
+}
+
+.corporate p {
+    margin-left: 170px;
+    margin-right: 170px;
+    max-width: 75%;
+}
+
+.piece2 {
+    display: flex;
+    width: 75%;
+    margin: 10px auto 10px auto;
+}
+
+.piece3 {
+    max-width: 70%;
+    height: auto;
+    background-color: rgba(173, 178, 182, 0.2);
+    padding: 30px 60px;
+    margin-right: 50px;
+}
+
+.piece4 {
+    max-width: 15%;
+    height: auto;
+    background-color: rgba(173, 178, 182, 0.2);
+    padding: 30px  20px;
+}
+
+.piece5 {
+    max-width: 40%;
+    height: auto;
+    background-color: rgba(173, 178, 182, 0.2);
+    margin: 30px auto 30px auto;
+}
+
+.corporate a {
+    text-decoration: none;
+}
+
+.corporate a:link {
+    color: black;
+}
+
+.corporate a:visited {
+    color: black;
+}
+
+.corporate a:hover {
+    color: black;
+}
+
+.corporate a:active {
+    color: black;
+}
+
+.corporate h1 {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wpcf7-spinner {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+
+}
+
+
+
+
+
+
+
